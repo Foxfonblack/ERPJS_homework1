@@ -20,9 +20,10 @@ function onClick (event) {
     console.log(colorArr)
 
     for(const color of colorArr) {
-        i+=1;
-    document.body.style.backgroundColor=colorArr[i]
-  
+     
+    document.body.style.backgroundColor=colorArr[i];
+    console.log(colorArr[i])
+    i+=1;
     break
 
     }
