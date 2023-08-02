@@ -14,17 +14,21 @@ function onClick (event) {
     // console.dir(event); 
     // event.preventDefault()
   
-    const color = document.getElementById("01").value.replaceAll(",")
+    const color = document.getElementById("01").value.replaceAll(",", "")
     console.log(color)
     const colorArr = color.split(" ")
     console.log(colorArr)
 
     for(const color of colorArr) {
-     
-    document.body.style.backgroundColor=colorArr[i];
-    console.log(colorArr[i])
-    i+=1;
-    break
+      if (i < colorArr.length) {
+        document.body.style.backgroundColor = colorArr[i];
+        console.log(colorArr[i])
+        i += 1;
+        break;
+      }
+      else i = 0;
+ 
+   
 
     }
     // event.currentTarget.elements.input.value;
