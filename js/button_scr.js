@@ -2,7 +2,7 @@ const button = document.getElementById("02")
 button.addEventListener("click", onClick)
 let i = 0;
 function onClick (event) {
-    const color = document.getElementById("01").value.trim()
+    const color = document.getElementById("01").value.replaceAll(" ", "")
     console.log(color)
     const colorArr = color.split(",")
     console.log(colorArr)
@@ -17,3 +17,4 @@ function onClick (event) {
       else i = 0;
     }
 }
+
