@@ -4,7 +4,7 @@ let i = 0;
 function onClick (event) {
     const color = document.getElementById("01").value.replaceAll(" ", "")
     console.log(color)
-    const colorArr = color.split(",")
+    const colorArr = color.split(",").filter(item=> item.length !== 0)
     console.log(colorArr)
 
     for(const color of colorArr) {
@@ -16,5 +16,6 @@ function onClick (event) {
       }
       else i = 0;
     }
+    // yellow  ,  black,,   ,, white  ,, ,,   red
 }
 

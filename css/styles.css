@@ -1,13 +1,13 @@
 .btn {
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     background-color: blue;
     color: aliceblue;
-    width: 360px;
-    height: 180px;
-    font-size: xx-large;
+    width: 48px;
+    height: 24px;
+    font-size: 10px;
     border-radius: 20px;
     box-shadow: 0px 4px 4px rgba(234, 229, 229, 0.946);
     
@@ -20,4 +20,13 @@
 .btn:active {
     background-color: antiquewhite;
     box-shadow: none;
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 12px;
+    align-items: center;
 }
