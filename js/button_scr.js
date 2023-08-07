@@ -1,8 +1,8 @@
-const button = document.getElementById("02")
+const button = document.getElementById("color_button")
 button.addEventListener("click", onClick)
 let i = 0;
 function onClick (event) {
-    const color = document.getElementById("01").value.replaceAll(" ", "")
+    const color = document.getElementById("color_input").value.replaceAll(" ", "")
     console.log(color)
     const colorArr = color.split(",").filter(item=> item.length !== 0)
     console.log(colorArr)
