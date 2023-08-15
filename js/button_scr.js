@@ -1,20 +1,28 @@
 const button = document.getElementById("color_button")
 button.addEventListener("click", onClick)
 // let i = 0;
-function onClick () {
-    const color = document.getElementById("color_input").value.trim()
+
     const urlRequest = 'https://unpkg.com/color-name-list@10.10.0/dist/colornames.json'
     let xhr = new XMLHttpRequest()
     xhr.open('GET', urlRequest)
     xhr.responseType = 'json'
     xhr.send()
-    xhr.onload = function(){
+ xhr.onload = function(){
       const responseObj = xhr.response
-      console.log(responseObj)
-      const result = responseObj.find(({name, hex}) =>{
-        return name.toLowerCase() === color.toLowerCase() || hex === color.toLowerCase()
+   console.log(responseObj)
+   return responseObj
+ }
 
-      })
+  
+function onClick() {
+  const color = document.getElementById("color_input").value.trim()
+  const response = xhr.onload();
+  console.log(response)
+         const result = response.find(({name, hex}) =>{
+        return name.toLowerCase() === color.toLowerCase() || hex === color.toLowerCase()
+         })
+  console.log(color)
+    console.log(result)
       if (result) {
         document.body.style.backgroundColor = result.hex
       }
@@ -37,5 +45,5 @@ function onClick () {
     //   else i = 0;
     // }
     // yellow  ,  black,,   ,, white  ,, ,,   red
-}
+
 
