@@ -1,8 +1,8 @@
-.btn {
-    /* position: absolute;
+/* .btn {
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
     background-color: blue;
     color: aliceblue;
     width: 48px;
@@ -11,8 +11,8 @@
     border-radius: 20px;
     box-shadow: 0px 4px 4px rgba(234, 229, 229, 0.946);
     
-}
-.btn:hover {
+} */
+/* .btn:hover {
     background-color: aquamarine;
     color: blue;
     cursor: pointer;
@@ -29,4 +29,11 @@
     display: flex;
     gap: 12px;
     align-items: center;
+} */
+
+.mb{
+   text-align: left;
+   margin-top: 12px;
+   margin-left: 12px;
+
 }

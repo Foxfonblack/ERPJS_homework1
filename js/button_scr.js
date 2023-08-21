@@ -1,4 +1,6 @@
-const button = document.getElementById("color_button")
+const button = document.querySelector(".btn-primary")
+const colorName = document.querySelector(".colorName")
+const colorHex = document.querySelector(".colorHex")
 button.addEventListener("click", onClick)
 // let i = 0;
 
@@ -11,11 +13,12 @@ button.addEventListener("click", onClick)
       const responseObj = xhr.response
    console.log(responseObj)
    return responseObj
+   colorName.innerHTML = createMarkUp(responseObj)
  }
 
   
 function onClick() {
-  const color = document.getElementById("color_input").value.trim()
+  const color = document.querySelector(".form-control").value.trim()
   const response = xhr.onload();
   console.log(response)
          const result = response.find(({name, hex}) =>{
@@ -30,6 +33,14 @@ function onClick() {
         alert('there is no such a color in this array')
       }
     }
+
+    function createMarkUp(arr){
+      return arr.map(({name})=>`<li class="colorLi">${name}</li>`).join('')
+      
+    }
+
+    
+
     // .replaceAll(" ", "")
     // console.log(color)
     // const colorArr = color.split(",").filter(item=> item.length !== 0)
