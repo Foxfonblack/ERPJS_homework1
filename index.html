@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/btn.css" />
+
     <link
       href="
 https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css
 "
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/btn.css" />
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col fixed">
           <div class="mb-3 wrapper">
             <label for="formGroupExampleInput" class="form-label">Colors</label>
             <input
@@ -27,31 +28,32 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css
             />
           </div>
           <button id="color_button" class="btn btn-primary btn-md my-btn">
-            ERPJS
+            Select
           </button>
+          <div class="mb-3 history">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >History</label
+            >
+            <textarea
+              class="form-control text_area"
+              id="exampleFormControlTextarea1"
+              rows="9"
+            ></textarea>
+          </div>
         </div>
-        <div class="col">
-          <p class="text">Name:</p>
-          <ul class="colorText"></ul>
+        <div class="col src">
+          <div>
+            <p class="text">Name:</p>
+            <ul class="colorText"></ul>
+          </div>
+          <div>
+            <p class="text">Hex:</p>
+            <ul class="colorHex"></ul>
+          </div>
         </div>
-        <div class="col">
-          <p class="text">Hex:</p>
-          <ul class="colorHex"></ul>
-        </div>
+        <!-- <div class="col"></div> -->
       </div>
     </div>
-    <!-- <div class="wrapper">
-      <input
-        type="text"
-        class="js_input"
-        name="input"
-        id="color_input"
-        placeholder="enter color"
-      />
-      <button id="color_button" class="btn btn-primary btn-md my-btn">
-        ERPJS
-      </button>
-    </div> -->
     <script src="
 https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js
 "></script>
