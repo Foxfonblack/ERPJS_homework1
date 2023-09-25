@@ -1,15 +1,58 @@
+/* .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: blue;
+    color: aliceblue;
+    width: 48px;
+    height: 24px;
+    font-size: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(234, 229, 229, 0.946);
+
+} */
+
+/* .btn:hover {
+    background-color: aquamarine;
+    color: blue;
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: antiquewhite;
+    box-shadow: none;
+} */
+
+/* .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 12px;
+    align-items: center;
+} */
+
+/* .my-btn {
+    margin-left: 12px;
+} */
+
 .wrapper {
     margin-top: 12px;
 }
 
 .color {
-    list-style: none;
+    /* list-style: none; */
+    width: 700px;
 }
 
 ul,
 p {
     margin: 0;
 }
+
+
 
 .text {
     margin-top: 12px;
@@ -18,12 +61,10 @@ p {
 
 .src {
 
-
-
-
     display: flex;
     gap: 124px;
     margin-left: 300px;
+    max-width: 800px;
 }
 
 .history {
@@ -36,4 +77,50 @@ p {
 
     left: 2%;
     width: 260px;
+}
+
+.colorText {
+    width: 280px;
+}
+
+.sqr {
+    width: 24px;
+    height: 24px;
+}
+
+.btn_c {
+    width: 160px;
+    height: 32px;
+    background-color: cornflowerblue;
+}
+
+.btn_wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+#next_btn {
+    width: 100px;
+}
+
+.inp {
+    width: 60px;
+    margin-left: 0;
+}
+
+.total_wrapper {
+    display: flex;
+    gap: 96px;
+    justify-content: center;
+}
+
+.page {
+    margin-left: 12px;
+}
+
+.gotopage_wrapper {
+    display: flex;
+    max-height: 38px;
 }
